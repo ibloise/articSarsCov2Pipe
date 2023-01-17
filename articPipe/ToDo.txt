@@ -1,0 +1,6 @@
+Cosas pendientes de la pipeline:
+
+	Abrir el .fasta, arreglarle los encabezados y eliminar los que no pasen el filtro de N -> Esta función puede ser útil para más pipelines, debería estar en pipelinesTOols
+	Correr mafft.
+	El script debería devolver el run_name.fasta, run_name_quality.fasta, run_name_quality_aln.fasta, run_name_fail.fasta y run_name_fail.txt
+	Escribir toda la documentación de la pipeline 

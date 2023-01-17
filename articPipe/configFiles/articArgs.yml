@@ -1,0 +1,44 @@
+#Config file for artic SARS-CoV-2 pipeline
+
+---
+artic guppyplex:
+  min-length :
+    type: flag
+    value : 200
+  max-length :
+    type: flag
+    value : 1400
+  directory :
+    type: flag
+    value: ""
+  prefix:
+    type: flag
+    value: ""
+artic minion:
+  normalise: 
+    type :  flag
+    value : 200
+  threads: 
+    type: flag
+    value :  8
+  scheme-directory: 
+    type: flag
+    value : ~/Bioinformatica/artic-ncov2019/primer_schemes/
+  fast5-directory:
+    type: flag
+    value: /fast5_pass/
+  primer_scheme: 
+    type: pos
+    pos : 1
+    value: nCoV-2019/V1200
+  read-file:
+    type: flag
+    value: ""
+  sequencing-summary:
+    type: flag
+    value: ""
+  sample:
+    type: pos
+    pos: 2
+    value: "" 
+...

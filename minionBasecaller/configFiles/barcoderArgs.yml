@@ -1,0 +1,30 @@
+#Args for minionBarcoder script
+
+---
+guppy_basecaller:
+  config:
+    type: flag
+    value: dna_r9.4.1_450bps_fast.cfg 
+  input_path:
+    type: flag
+    value: ""
+  save_path:
+    type: flag
+    value: fastq_mix
+  device:
+    type: flag
+    value: auto
+  recursive: #Realmente es boolean
+    type: flag
+    value: ""
+
+guppy_barcoder:
+  input_path:
+    type: flag
+    value: fastq_mix/pass
+  save_path:
+    type: flag
+    value: fastq_pass
+  barcode_kits:
+    type: flag
+    value: SQK-RBK110-96
